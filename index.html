@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section class="section1 mb-5">
+      <div class="container shadow-sm p-4 my-4 rounded-4">
+        <h1 class="text-center mb-4">CRUD SYSTEM</h1>
+        <div class="inputs">
+          <div class="form-floating mb-3">
+            <input
+              oninput="validationName()"
+              type="text"
+              class="form-control"
+              id="productName"
+              placeholder="iphone"
+            />
+            <label for="productName">Product Name</label>
+          </div>
+          <p id="msgName" class="alert alert-danger d-none">
+            It must start with a letter, be 3 to 20 characters long, and can
+            only contain letters, numbers or underscores.
+          </p>
+          <div class="form-floating mb-3">
+            <input
+              oninput="validationPrice()"
+              type="number"
+              class="form-control"
+              id="productPrice"
+              placeholder="8..$"
+            />
+            <label for="productPrice">Product Price</label>
+          </div>
+          <p id="msgPrice" class="alert alert-danger d-none">
+            It should be a number with up to 10 digits before the decimal point
+            and up to 2 digits after the decimal (e.g.,100,49.99,1234567890.50)
+          </p>
+          <div class="form-floating mb-3">
+            <input
+              oninput="validationCategory()"
+              list="list"
+              type="text"
+              class="form-control"
+              id="productCategory"
+              placeholder=""
+            />
+            <label for="productCategory">Product Category</label>
+            <datalist id="list">
+              <option value="tv"></option>
+              <option value="mobile"></option>
+              <option value="screens"></option>
+              <option value="electronic"></option>
+            </datalist>
+          </div>
+          <p id="msgCategory" class="alert alert-danger d-none">
+            Please enter one of the following options
+          </p>
+          <div class="form-floating mb-3">
+            <textarea
+              oninput="validationDescription()"
+              class="form-control"
+              id="productDescription"
+              placeholder="Comment"
+            ></textarea>
+            <label for="productDescription">Product Description</label>
+          </div>
+          <p id="msgDescription" class="alert alert-danger d-none">
+            At least 3 characters
+          </p>
+          <div class="form-floating mb-3">
+            <input
+              onchange="validationImage()"
+              type="file"
+              class="form-control"
+              id="productImage"
+              placeholder="...."
+            />
+            <label for="productImage">Product Price</label>
+          </div>
+          <p id="msgImage" class="alert alert-danger d-none">
+            Please enter a valid file name with one of the following extensions: .jpg, .png, .avif, .jpeg, .svg, or .webp. The file name must include at least one character before the extension.
+          </p>
+          <button
+            onclick="addProduct()"
+            id="btnAdd"
+            type="button"
+            class="btn btn-3 button ms-2"
+          >
+            Add Product
+          </button>
+          <button
+            onclick="updateProduct()"
+            id="btnUpdate"
+            type="button"
+            class="btn btn-3 button ms-2 d-none"
+          >
+            Update Product
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section2 pb-3">
+      <div class="container-fluid">
+        <div class="mb-4">
+          <input
+            oninput="searchData()"
+            id="searchInput"
+            type="search"
+            class="form-control w-50 m-auto"
+            placeholder="Search By Name"
+          />
+        </div>
+
+        <div id="rowData" class="row gy-4"></div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
