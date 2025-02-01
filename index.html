@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="section1 mb-5">
+    <section class="section1 mb-4">
       <div class="container shadow-sm p-4 my-4 rounded-4">
         <h1 class="text-center mb-4">CRUD SYSTEM</h1>
         <div class="inputs">
@@ -27,7 +27,7 @@
               id="productName"
               placeholder="iphone"
             />
-            <label for="productName">Product Name</label>
+            <label class="main-color" for="productName">Product Name</label>
           </div>
           <p id="msgName" class="alert alert-danger d-none">
             It must start with a letter, be 3 to 20 characters long, and can
@@ -41,7 +41,7 @@
               id="productPrice"
               placeholder="8..$"
             />
-            <label for="productPrice">Product Price</label>
+            <label class="main-color" for="productPrice">Product Price</label>
           </div>
           <p id="msgPrice" class="alert alert-danger d-none">
             It should be a number with up to 10 digits before the decimal point
@@ -56,7 +56,7 @@
               id="productCategory"
               placeholder=""
             />
-            <label for="productCategory">Product Category</label>
+            <label class="main-color" for="productCategory">Product Category</label>
             <datalist id="list">
               <option value="tv"></option>
               <option value="mobile"></option>
@@ -74,7 +74,7 @@
               id="productDescription"
               placeholder="Comment"
             ></textarea>
-            <label for="productDescription">Product Description</label>
+            <label class="main-color" for="productDescription">Product Description</label>
           </div>
           <p id="msgDescription" class="alert alert-danger d-none">
             At least 3 characters
@@ -87,7 +87,7 @@
               id="productImage"
               placeholder="...."
             />
-            <label for="productImage">Product Price</label>
+            <label class="main-color" for="productImage">Product Price</label>
           </div>
           <p id="msgImage" class="alert alert-danger d-none">
             Please enter a valid file name with one of the following extensions: .jpg, .png, .avif, .jpeg, .svg, or .webp. The file name must include at least one character before the extension.
@@ -118,7 +118,7 @@
             oninput="searchData()"
             id="searchInput"
             type="search"
-            class="form-control w-50 m-auto"
+            class="form-control w-50 mx-auto"
             placeholder="Search By Name"
           />
         </div>

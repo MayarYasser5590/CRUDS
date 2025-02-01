@@ -1,30 +1,27 @@
 body{
-    background-color: #FE9A8D;
+    background-color: #caf0f8;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0% 100%);
 }
-.bg{
-  background-color: #FE9A8D;
+.main-color{
+  color: #22577a; 
 }
 section .container {
     background-color: #F7F7F7;
 }
 section h1{
-    color: #FE9A8D;
-    text-shadow: 0 0 1px #FE9A8D;
+    color: #1b4965;
+    text-shadow: 0 0 1px #22577a;
 }
 .section1 .form-floating .form-control , .section2 input{
-    border-color: #F9C0AB;
-    color: #cc776c;
+    border-color: #62b6cb;
+    color: #22577a;
 }
 .section1 .form-floating .form-control:focus , .section2 input:focus{
-    border-color: #FE9A8D;
-    box-shadow: 0 0 10px #FE9A8D;
-  }
-  .section1 .form-floating label {
-    color: #FE9A8D;
+    border-color: #62b6cb;
+    box-shadow: 0 0 10px #62b6cb;
   }
   .section1 .form-floating textarea{
-    height: 80px;
+    height: 80px; 
   }
   .button{
     --bs-btn-padding-x: 1.2875rem;
@@ -35,22 +32,22 @@ section h1{
   }
   .btn-2 , .btn-3{
   --bs-btn-color: #fff;
-  --bs-btn-bg: #cc776c;
-  --bs-btn-border-color: #cc776c;
-  --bs-btn-hover-color: #cc776c;
+  --bs-btn-bg: #22577a;
+  --bs-btn-border-color: #22577a;
+  --bs-btn-hover-color: #22577a;
   --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-border-color: #cc776c;
+  --bs-btn-hover-border-color: #22577a;
   transition: all 0.5s;
   }
   button i {
     color: #fff;
   }
   button:hover i{
-    color: #cc776c;
+    color: #22577a;
   }
   .btn-3{
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #ad635a;
+    --bs-btn-hover-bg: #22577a;
   }
   .section2 .card .card-img-top{
     border-top-left-radius: 16px;
@@ -60,17 +57,14 @@ section h1{
     box-shadow: 0 0 15px #9b9898;
   }
   .section2 input::placeholder{
-    color: #cc776c;
+    color: #22577a;
   }
   .section2 .card-img-top{
     height: 250px;
   }
   .section2 #rowData .index{
-    background-color:#FE9A8D ;
+    background-color:#22577a ;
     color: #fff;
-  }
-  .section2 span {
-    color: #cc776c;
   }
   .section2 h3{
     font-size: 20px;

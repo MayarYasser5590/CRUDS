@@ -60,7 +60,7 @@ function createHtmlCols(i) {
               alt="${productList[i].name}"
             />
             <div class="card-body">
-              <span class="border border-1 index p-1 rounded-2 px-2">index ${i}</span>
+              <span class="border border-1 index p-1 rounded-2 px-2 main-color">index ${i}</span>
               <h3 class="card-title text-start pt-3">${productList[
                 i
               ].name.replace(
@@ -78,10 +78,10 @@ function createHtmlCols(i) {
               }</p>
             <div class="card-footer text-center">
               <button onclick="setUpdateInfo(${i})" type="button" class="btn btn-2 button me-2">
-              <i class="fa-solid fa-trash"></i> Update
+              <i class="fa-regular fa-pen-to-square"></i> Update
               </button>
               <button onclick="deleteItem(${i})" type="button" class="btn btn-2 button ms-2">
-              <i class="fa-regular fa-pen-to-square"></i> Delete
+              <i class="fa-solid fa-trash"></i> Delete
               </button>
             </div>
           </div>
